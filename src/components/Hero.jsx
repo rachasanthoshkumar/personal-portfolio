@@ -24,7 +24,7 @@ const Hero = () => {
             </div>
         </div>
         <div className='flex flex-col  items-center gap-4  md:px-0 md:flex md:flex-row md:items-center md:gap-6'>
-          <button className='w-[350px] hover:bg-black/80 rounded-full  bg-[#1D1D1D]   h-[50px] md:px-[6px] py-[1px] text-[14px] md:w-[175px] md:bg-black text-white'>Contact me</button>
+          <button className='w-[250px] hover:bg-black/80 rounded-full  bg-[#1D1D1D]   h-[50px] md:px-[6px] py-[1px] text-[14px] md:w-[175px] md:bg-black text-white'>Contact me</button>
           <div className='flex items-center justify-center'>
 
           <div className='flex bg-white p-3 rounded-full md:p-4 md:bg-white hover:bg-[#026cfd] hover:cursor-pointer hover:text-white'>
