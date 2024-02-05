@@ -37,7 +37,7 @@ const Navbar = () => {
         
         
     </div>
-    <div className='absolute '>
+    <div className='absolute'>
     {isMenuClicked && <MenuSidebar/>}
     </div>
     </div>

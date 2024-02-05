@@ -1,0 +1,5 @@
+/* styles.css or your tailwind.css */
+.gradient-background {
+    background: linear-gradient(360deg, hsla(154, 22%, 81%, 1) 40%, hsla(42, 79%, 80%, 1) 100%);
+  }
+  
