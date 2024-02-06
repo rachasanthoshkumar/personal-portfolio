@@ -1,12 +1,29 @@
-import React from 'react'
+import {useRef, useEffect} from 'react'
 import imgSrc from '../images/img.png';
 import { FaLinkedin } from "react-icons/fa";
+import gsap from 'gsap';
 
 const Hero = () => {
+  const heroImageRef = useRef(null)
+  const heroDescRef = useRef(null)
+  useEffect(() => {
+    console.log("rendering");
+
+    // Animation for heroImageRef
+    gsap.fromTo(heroImageRef.current,  
+      { y: 0, opacity: 0 },
+      { x: 0, opacity: 1, duration: 1.5, delay: 0.5 });
+
+    // Animation for heroDescRef
+    gsap.fromTo(heroDescRef.current,
+      { x: -50, opacity: 0 },
+      { x: 0, opacity: 1, duration: 1, delay: 1 } );
+  }, []);
+
   return (
     <div className='mt-7 md:mt-3 gap-4 px-4 flex flex-col w-full md:w-[1104px] md:h-[520px] md:flex md:flex-row  md:justify-between md:mt-2 md:gap-2'>
     {/*Left section */}
-    <div className='bg-hsla-background gradient-background flex flex-col py-4 px-4 gap-4  md:w-[704px]  md:py-[56px] md:px-[42px] justify-between rounded-3xl  bg-[#ebece4] md:h-[520px]   font-poppins '>
+    <div ref={heroDescRef} className='bg-hsla-background gradient-background flex flex-col py-4 px-4 gap-4  md:w-[704px]  md:py-[56px] md:px-[42px] justify-between rounded-3xl  bg-[#ebece4] md:h-[520px]   font-poppins '>
         <div className='mb-3 mt-3 md:mt-0 md:mb-0 ' >
             <p className='text-xl md:text-4xl md:h-[141px] font-poppins font-semibold '>Hello, I'm Santhosh, passionate Web Developer</p>
         </div>
@@ -35,7 +52,7 @@ const Hero = () => {
         </div>
     </div>
     {/* Right section */}
-    <div className='order-first md:order-last h-[300px] rounded-3xl md:w-[354px] md:h-full'>
+    <div ref={heroImageRef} className='order-first md:order-last h-[300px] rounded-3xl md:w-[354px] md:h-full'>
       <img src={imgSrc} alt="" className='rounded-3xl w-full h-full object-cover'/>
     </div>
     </div>

@@ -1,14 +1,27 @@
-import { useState } from 'react'
+import { useState,useRef, useLayoutEffect } from 'react'
 import { AiOutlineMenu } from "react-icons/ai";
 import MenuSidebar from './MenuSidebar';
 import { RxCross2 } from "react-icons/rx";
+import gsap from 'gsap'
+
 const Navbar = () => {
+
   const [isMenuClicked,setIsMenuClicked] = useState(false);
   const toggleMenu = ()=>{
     setIsMenuClicked(!isMenuClicked)
   }
+
+  const navbarRef = useRef(null)
+  useLayoutEffect(()=>{
+    console.log("rendering")
+    gsap.fromTo(
+      navbarRef.current,
+      { y: -50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.8, delay: 0 }
+    );
+  },[])
   return (
-    <div className='relative z-10'>
+    <div ref={navbarRef} className='relative z-10'>
 
     
     <div className=' flex px-4 items-center justify-between md:w-[1104px] md:py-[5px] h-[30px] font-poppins md:px-5'>
