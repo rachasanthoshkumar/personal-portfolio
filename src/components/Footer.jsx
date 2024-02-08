@@ -12,7 +12,7 @@ useLayoutEffect(()=>{
   
 },[])
   return (
-    <div ref={footerRef} className="font-poppins  mt-6 px-4  items-center md:grid-cols-2 md:max-w-[1104px]">
+    <div name="contact" ref={footerRef} className="font-poppins  mt-6 px-4  items-center md:grid-cols-2 md:max-w-[1104px]">
       <div className="bg-[#ebece4] p-8 flex flex-col gap-12 rounded-xl">
         <div className="flex flex-col gap-3">
           <p className="text-4xl font-semibold">Want to work together?</p>

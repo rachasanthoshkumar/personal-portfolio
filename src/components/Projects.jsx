@@ -29,7 +29,7 @@ const Projects = () => {
         window.open('https://speech-recognition-todo.vercel.app/','_blank')
     }
   return (
-    <div ref={pref} className='cursor-pointer mt-6 px-4 grid gap-10 grid-cols-1  items-center md:grid-cols-2 md:max-w-[1104px]'>
+    <div name="projects" ref={pref} className='cursor-pointer mt-6 px-4 grid gap-10 grid-cols-1  items-center md:grid-cols-2 md:max-w-[1104px]'>
         <div className='z-100 overflow-hidden md:h-[511px] rounded-xl ' onClick={openDiceGame}>
             
             <img src={dice} alt="" className='hover:scale-110 delay-150 duration-300 w-full h-full '/>

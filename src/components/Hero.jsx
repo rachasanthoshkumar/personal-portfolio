@@ -19,9 +19,20 @@ const Hero = () => {
       { x: 0, opacity: 1, duration: 1.5, delay: 0.5 });
 
     // Animation for heroDescRef
-    gsap.fromTo(heroDescRef.current,
-      { x: -50, opacity: 0 },
-      { x: 0, opacity: 1, duration: 1, delay: 1 } );
+    
+
+      if(window.innerWidth<=480){
+        gsap.fromTo(
+          heroDescRef.current,
+          { y: 0, opacity: 0 },
+          { x: 0, opacity: 1, duration: 1, delay: 1 }
+        );
+      }
+      else{
+        gsap.fromTo(heroDescRef.current,
+          { x: -50, opacity: 0 },
+          { x: 0, opacity: 1, duration: 1, delay: 1 } );
+      }
   }, []);
 
   return (

@@ -1,12 +1,12 @@
 import React from 'react'
-
-const MenuSidebar = () => {
+import {Link} from 'react-scroll'
+const MenuSidebar = ({toggleMenu}) => {
   return (
-    <div className='z-20 bg-white w-screen h-screen font-poppins py-10'>
+    <div className='cursor-pointer z-20 px-6 bg-white text-black w-screen rounded-md h-screen font-poppins py-10'>
         
-        <div className='flex flex-col items-center gap-4 text-2xl font-semibold '>
-            <p>Home</p>
-            <p>Projects</p>
+        <div className='flex flex-col items-center gap-4 text-md '>
+            <Link onClick={toggleMenu} to='home' smooth duration={500}>Home</Link>
+            <Link onClick={toggleMenu} to='projects' smooth duration={500}>Projects</Link>
         </div>
     </div>
   )
