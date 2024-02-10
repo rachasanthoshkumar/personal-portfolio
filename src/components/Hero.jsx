@@ -1,6 +1,7 @@
 import {useRef, useEffect} from 'react'
 import imgSrc from '../images/img.png';
 import { FaLinkedin } from "react-icons/fa";
+import { IoLogoGithub } from "react-icons/io5";
 import gsap from 'gsap';
 import { FaArrowDownLong } from "react-icons/fa6";
 
@@ -57,10 +58,13 @@ const Hero = () => {
         </div>
         <div className='group flex flex-col  items-center gap-4  md:px-0 md:flex md:flex-row md:items-center md:gap-6'>
           <button onClick={openResume} className='flex items-center justify-center gap-2 w-[250px] group-hover:bg-black/80 rounded-full  bg-[#1D1D1D]   h-[50px] md:px-[6px] py-[1px] text-[15px] md:w-[175px] md:bg-black text-white'>Resume <span className='group-hover:rotate-180 transform-transition ease-in-out delay-0.5 duration-500'><FaArrowDownLong /></span></button>
-          <div className='flex items-center justify-center'>
+          <div className='gap-2 flex items-center justify-center'>
 
           <div className='flex bg-white p-3 rounded-full md:p-4 md:bg-white hover:bg-[#026cfd] hover:cursor-pointer hover:text-white'>
           <FaLinkedin className="text-md  " size={20} />
+          </div>
+          <div className='flex bg-white p-3 rounded-full md:p-4 md:bg-white hover:bg-black hover:cursor-pointer hover:text-white'>
+          <IoLogoGithub  className="text-md  " size={20} />
           </div>
           
           </div>

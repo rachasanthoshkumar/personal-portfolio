@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef } from "react";
 import { FaLinkedin } from "react-icons/fa";
 import gsap from "gsap";
+import { IoLogoGithub } from "react-icons/io5";
 
 const Footer = () => {
 const footerRef = useRef(null)
@@ -23,10 +24,13 @@ useLayoutEffect(()=>{
           <button className="flex items-center justify-center gap-2 w-[250px] group-hover:bg-black/80 rounded-full  bg-[#1D1D1D]   h-[50px] md:px-[6px] py-[1px] text-[15px] md:w-[175px] md:bg-black text-white">
             Contact me
           </button>
-          <div className="flex items-center justify-center">
+          <div className="gap-2 flex items-center justify-center">
             <div className="flex bg-white p-3 rounded-full md:p-4 md:bg-white hover:bg-[#026cfd] hover:cursor-pointer hover:text-white">
               <FaLinkedin className="text-md  " size={20} />
             </div>
+            <div className='flex bg-white p-3 rounded-full md:p-4 md:bg-white hover:bg-black hover:cursor-pointer hover:text-white'>
+          <IoLogoGithub  className="text-md  " size={20} />
+          </div>
           </div>
         </div>
       </div>
