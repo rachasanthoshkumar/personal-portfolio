@@ -4,7 +4,7 @@ import MenuSidebar from "./MenuSidebar";
 import { RxCross2 } from "react-icons/rx";
 import gsap from "gsap";
 import {Link} from 'react-scroll'
-const Navbar = ({isMenuClicked,setIsMenuClicked,toggleMenu}) => {
+const Navbar = ({isMenuClicked,toggleMenu}) => {
  
   const navbarRef = useRef(null);
   useLayoutEffect(() => {
@@ -16,7 +16,7 @@ const Navbar = ({isMenuClicked,setIsMenuClicked,toggleMenu}) => {
     );
   }, []);
   return (
-    <div ref={navbarRef} className="w-full container mx-auto cursor-pointer  z-10">
+    <div ref={navbarRef} className="relative w-full container mx-auto cursor-pointer  z-10">
       <div className=" flex px-4 items-center justify-between md:py-[5px] h-[30px] font-poppins md:px-5">
         <div className="flex items-center gap-1">
           <div className="bg-[#ecbf53] rounded-full w-[16px] h-[16px]"></div>
@@ -37,7 +37,7 @@ const Navbar = ({isMenuClicked,setIsMenuClicked,toggleMenu}) => {
           )}
         </div>
       </div>
-      <div className=" absolute  w-fit h-screen">{isMenuClicked && <MenuSidebar  toggleMenu={toggleMenu} />}</div>
+      <div className=" absolute top-6 bg-white z-100 w-fit h-screen">{isMenuClicked && <MenuSidebar  toggleMenu={toggleMenu} />}</div>
     </div>
   );
 };

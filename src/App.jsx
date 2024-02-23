@@ -9,16 +9,21 @@ function App() {
   const toggleMenu = () => {
     setIsMenuClicked(!isMenuClicked);
   };
- 
+  const openLinkedIn = () => {
+    window.open("https://www.linkedin.com/in/santhosh-racha/");
+  };
+  const openGithub = () => {
+    window.open("https://github.com/rachasanthoshkumar");
+  };
   return (
     
     <div className="container max-w-screen-lg mt-2 py-4 px-2   md:py-2 mx-auto  h-full ">
       <div>
 
       <Navbar isMenuClicked={isMenuClicked} setIsMenuClicked={setIsMenuClicked} toggleMenu={toggleMenu}/>
-      <Hero/>
+      <Hero openLinkedIn={openLinkedIn} openGithub={openGithub}/>
       <Projects />
-      <Footer/>
+      <Footer openLinkedIn={openLinkedIn} openGithub={openGithub}/>
       </div>
     </div>
   )

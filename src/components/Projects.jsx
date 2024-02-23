@@ -61,14 +61,17 @@ const Projects = () => {
         <p className="absolute text-white top-12 left-6 z-20 text-2xl sm:text-white font-semibold">
           Roll Dice
         </p>
-        <p className="sm:block  absolute top-20 left-6 z-20 text-sm text-white">
+        <p className="hidden sm:block  absolute top-20 left-6 z-20 text-sm text-white">
           Gaming App
         </p>
+        <div className="flex items-center justify-center ">
+
         <img
           src={dice}
           alt=""
-          className="hidden sm:block  w-fit h-full sm:h-full object-cover "
+          className="w-72 h-72 sm:block sm:w-full sm:h-full object-cover "
           />
+          </div>
           </div>
       </div>
       <div
