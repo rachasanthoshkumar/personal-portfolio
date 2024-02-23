@@ -12,11 +12,14 @@ function App() {
  
   return (
     
-    <div className="mt-2 py-4 px-2 w-full  md:py-2 mx-auto md:max-w-[1200px] h-full md:mx-[160px] md:px-[48px]">
+    <div className="container max-w-screen-lg mt-2 py-4 px-2   md:py-2 mx-auto  h-full ">
+      <div>
+
       <Navbar isMenuClicked={isMenuClicked} setIsMenuClicked={setIsMenuClicked} toggleMenu={toggleMenu}/>
       <Hero/>
       <Projects />
       <Footer/>
+      </div>
     </div>
   )
 }

@@ -16,8 +16,8 @@ const Navbar = ({isMenuClicked,setIsMenuClicked,toggleMenu}) => {
     );
   }, []);
   return (
-    <div ref={navbarRef} className="cursor-pointer relative z-10">
-      <div className=" flex px-4 items-center justify-between md:w-[1104px] md:py-[5px] h-[30px] font-poppins md:px-5">
+    <div ref={navbarRef} className="w-full container mx-auto cursor-pointer  z-10">
+      <div className=" flex px-4 items-center justify-between md:py-[5px] h-[30px] font-poppins md:px-5">
         <div className="flex items-center gap-1">
           <div className="bg-[#ecbf53] rounded-full w-[16px] h-[16px]"></div>
           <div className="text-[16px] font-semibold">SANTHOSH</div>

@@ -37,7 +37,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className='mt-7 md:mt-3 gap-4 px-4 flex flex-col w-full md:w-[1104px] md:h-[520px] md:flex md:flex-row  md:justify-between md:mt-2 md:gap-2'>
+    <div className='container mx-auto mt-7 md:mt-3 gap-4 px-4 flex flex-col w-full  md:h-[520px] md:flex md:flex-row  md:justify-between md:mt-2 md:gap-2'>
     {/*Left section */}
     <div ref={heroDescRef} className='flex flex-col py-4 px-4 gap-4  md:w-[704px]  md:py-[56px] md:px-[42px] justify-between rounded-3xl  bg-[#ebece4] md:h-[520px]   font-poppins '>
         <div className='mb-3 mt-3 md:mt-0 md:mb-0 ' >
