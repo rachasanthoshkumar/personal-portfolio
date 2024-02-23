@@ -1,5 +1,5 @@
 import { useRef, useEffect } from "react";
-import imgSrc from "../images/img.png";
+import imgSrc from "../images/awesome.jpg";
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io5";
 import gsap from "gsap";
