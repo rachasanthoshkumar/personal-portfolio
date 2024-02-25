@@ -1,5 +1,7 @@
 import { useRef, useEffect } from "react";
 import imgSrc from "../images/awesome.jpg";
+import prisma from "../images/prisma.png";
+import tailwindcss from "../images/tailwindcss.png";
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io5";
 import gsap from "gsap";
@@ -65,16 +67,23 @@ const Hero = () => {
           <p className="hidden md:mr-4 md:block text-xl font-semibold">
             Tech Stack :
           </p>
-          <div className="transition ease-in-out delay-150 duration-300 hover:translate-y-[-1rem] ">
-            <img src="https://skillicons.dev/icons?i=html,css" alt="" />
-          </div>
+          <div className="flex gap-2 items-center">
+
           <div className="transition ease-in-out delay-150 duration-300 hover:translate-y-[-1rem] ">
             <img src="https://skillicons.dev/icons?i=js,ts" alt="" />
           </div>
           <div className="transition ease-in-out delay-150 duration-300 hover:translate-y-[-1rem] ">
-            <img src="https://skillicons.dev/icons?i=react,next" alt="" />
+            <img className="" src="https://skillicons.dev/icons?i=react,next" alt="" />
+          </div>
+          
+          <div className="transition ease-in-out delay-150 duration-300 hover:translate-y-[-1rem] ">
+            <img className="w-12 h-12" src={prisma} alt="" />
+          </div>
+          <div className="transition ease-in-out delay-150 duration-300 hover:translate-y-[-1rem] ">
+            <img className="object-fit             w-8 h-8" src={tailwindcss} alt="" />
           </div>
         </div>
+          </div>
         <div className=" flex flex-col  items-center gap-4  md:px-0 md:flex md:flex-row md:items-center md:gap-6">
           <div className="group flex gap-2" >
 
