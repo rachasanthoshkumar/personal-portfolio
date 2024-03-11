@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import dice from "../images/another1.png";
 import voice from "../images/todo.jpg";
 import payments from "../images/pay.png";
+import chat from "../images/chat.png";
 import gsap from "gsap";
 const Projects = () => {
   const pref = useRef(null);
@@ -34,6 +35,7 @@ const Projects = () => {
       ref={pref}
       className="overflow:hidden group container mx-auto cursor-pointer mt-4 px-4 grid gap-4 grid-cols-1  items-center md:grid-cols-2 font-poppins"
     >
+       
       <div
         className="bg-[#313443] relative h-[260px] overflow-hidden md:h-[450px] rounded-xl "
         onClick={openPaymentsApp}
@@ -50,6 +52,25 @@ const Projects = () => {
         <img src={payments} alt="" className="mt-4 w-64 h-64 sm:h-full sm:w-full" />
         </div>
       </div>
+      </div>
+      <div
+        className=" relative h-[260px] overflow-hidden md:h-[450px]  rounded-xl "
+        
+      >
+        <div className="w-full h-full group hover:scale-105 transform transition-transform duration-300 ease-in-out">
+
+        <p className="absolute top-12 left-6 z-20 text-2xl text-black font-semibold">
+          Chat App
+        </p>
+        <p className="hidden sm:block absolute top-20 left-6 z-20 text-sm text-black">
+          {" "}
+        </p>
+        <img
+          src={chat}
+          alt=""
+          className=" w-full h-full object-cover  "
+          />
+          </div>
       </div>
 
       <div
@@ -93,6 +114,7 @@ const Projects = () => {
           />
           </div>
       </div>
+     
     </div>
   );
 };

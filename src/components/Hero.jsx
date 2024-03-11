@@ -10,7 +10,7 @@ import { FaArrowDownLong } from "react-icons/fa6";
 const Hero = () => {
   const openResume = ({openLinkedIn,openGithub}) => {
     window.open(
-      "https://drive.google.com/file/d/1tbaeWpdGPcR7WV9l33VMVkfdhZAcrlEs/view?usp=sharing",
+      "https://drive.google.com/file/d/1_RDHvf2ymloPbUhuJdX1qCy2bAhSBWU0/view?usp=sharing",
       "_blank"
     );
   };
@@ -51,15 +51,18 @@ const Hero = () => {
   };
 
   return (
-    <div className="container mx-auto mt-7 md:mt-3 gap-4 px-4 flex flex-col w-full  md:h-[520px] md:flex md:flex-row  md:justify-between md:mt-2 md:gap-2">
+    <div className="container mx-auto mt-7 md:mt-3 gap-4 px-4 flex flex-col w-full  md:h-[520px] md:flex md:flex-row  md:justify-between md:mt-2 md:gap-4">
       {/*Left section */}
       <div
         ref={heroDescRef}
-        className="flex flex-col py-4 px-4 gap-4  md:w-[704px]  md:py-[56px] md:px-[42px] justify-between rounded-3xl  bg-[#ebece4] md:h-[520px]   font-poppins "
+        className="flex flex-col py-4 px-4 gap-4  md:w-[704px]  md:py-[76px] md:px-[42px] justify-between rounded-3xl  bg-[#ebece4] md:h-[520px]   font-poppins "
       >
         <div className="mb-3 mt-3 md:mt-0 md:mb-0 ">
           <p className="text-xl md:text-4xl md:h-[141px] font-poppins font-semibold ">
             Hello, I'm Santhosh, passionate Web Developer
+          </p>
+          <p className="text-md text-gray-700">
+          Recent graduate with expertise in full stack development,  eager to contribute my skills in creating impactful and efficient digital solutions for future projects. 
           </p>
         </div>
         {/*Tech skills */}
@@ -119,7 +122,7 @@ const Hero = () => {
         className="order-first md:order-last h-[300px] rounded-3xl md:w-[354px] md:h-full"
       >
         <img
-          src={imgSrc}
+          src={"https://static.vecteezy.com/system/resources/previews/034/339/905/non_2x/3d-kid-character-waving-hand-with-cute-happy-face-free-png.png"}
           alt=""
           className="rounded-3xl w-full h-full object-cover"
         />

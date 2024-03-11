@@ -1,7 +1,7 @@
-import { useState,useEffect, useRef, useLayoutEffect } from "react";
+import {  useRef, useLayoutEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import MenuSidebar from "./MenuSidebar";
-import { RxCross2 } from "react-icons/rx";
+
 import gsap from "gsap";
 import {Link} from 'react-scroll'
 const Navbar = ({isMenuClicked,toggleMenu}) => {
@@ -23,21 +23,19 @@ const Navbar = ({isMenuClicked,toggleMenu}) => {
           <div className="text-[16px] font-semibold">SANTHOSH</div>
         </div>
         <div className="hidden md:flex md:gap-10">
-          <Link to="home" smooth duration={500} className="hover:text-black cursor-pointer text-[14px] font-semibold">Home</Link>
-          <Link to="projects" smooth duration={500}
+          <Link to="home" smooth duration={1000} className="hover:text-black cursor-pointer text-[14px] font-semibold">Home</Link>
+          <Link to="projects" smooth duration={1000}
            className="hover:text-black cursor-pointer text-[14px] font-semibold text-[#727272]">Projects</Link>
-          <Link to="contact" smooth duration={500}
+          <Link to="contact" smooth duration={1000} 
           className="hover:text-black cursor-pointer text-[14px] font-semibold text-[#727272]">Contact</Link>
         </div>
         <div className="flex text-2xl text-black md:hidden">
-          {isMenuClicked ? (
-            <RxCross2 onClick={toggleMenu} size={25} />
-          ) : (
+          {isMenuClicked ?"" : (
             <AiOutlineMenu onClick={toggleMenu} />
           )}
         </div>
       </div>
-      <div className=" absolute top-6 bg-white z-100 w-fit h-screen">{isMenuClicked && <MenuSidebar  toggleMenu={toggleMenu} />}</div>
+      <div className="absolute top-0  bg-white z-100 w-fit h-screen">{isMenuClicked && <MenuSidebar  toggleMenu={toggleMenu} />}</div>
     </div>
   );
 };
