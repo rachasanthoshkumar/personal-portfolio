@@ -124,7 +124,7 @@ const Hero = () => {
         <img
           src={"https://static.vecteezy.com/system/resources/previews/034/339/905/non_2x/3d-kid-character-waving-hand-with-cute-happy-face-free-png.png"}
           alt=""
-          className="rounded-3xl w-full h-full object-cover"
+          className=" rounded-3xl object-contain w-full h-full sm:object-cover"
         />
       </div>
     </div>
