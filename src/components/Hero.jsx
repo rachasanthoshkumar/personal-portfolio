@@ -10,7 +10,7 @@ import { FaArrowDownLong } from "react-icons/fa6";
 const Hero = () => {
   const openResume = ({openLinkedIn,openGithub}) => {
     window.open(
-      "https://drive.google.com/file/d/1zwUk3wwYhBBOFLjDCoVOgKMGe8sN5jmZ/view?usp=sharing",
+      "https://drive.google.com/file/d/1PMGXpHN-mHqXvvprfkUeIxkx9iYZhLmu/view?usp=sharing",
       "_blank"
     );
   };
